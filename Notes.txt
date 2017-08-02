@@ -1,0 +1,11 @@
+#Factors to be considered
+
+Building :: webpack
+
+Source Control :: bitbucket
+
+Components
+
+Unit Tests
+
+Linting
