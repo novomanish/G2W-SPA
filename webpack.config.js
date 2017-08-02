@@ -1,4 +1,6 @@
-import _ from 'lodash';
+var _  = require('lodash');
+
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const path = require('path');
 
@@ -11,6 +13,15 @@ var commonConfig = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist') 
   },
+  plugins: [
+    // create index.html under the versioned folder
+    new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: 'src/index.ejs',
+        inject: false
+    })
+  ]
+
 };
 
 /**

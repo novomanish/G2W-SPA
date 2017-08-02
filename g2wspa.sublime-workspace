@@ -286,10 +286,10 @@
 			}
 		},
 		{
-			"file": "Notes",
+			"file": "Notes.txt",
 			"settings":
 			{
-				"buffer_size": 107,
+				"buffer_size": 108,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -298,7 +298,7 @@
 			"file": "src/index.js",
 			"settings":
 			{
-				"buffer_size": 279,
+				"buffer_size": 302,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -321,6 +321,14 @@
 				"line_ending": "Unix",
 				"name": "const path = require('path');"
 			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 18,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -335,12 +343,20 @@
 		"selected_items":
 		[
 			[
-				"proj",
-				"Project Manager"
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"refactor",
+				"Text Refactor: Rename"
 			],
 			[
 				"insta",
 				"Package Control: Install Package"
+			],
+			[
+				"proj",
+				"Project Manager"
 			],
 			[
 				"package",
@@ -371,10 +387,6 @@
 				"Set Syntax: Vue Component"
 			],
 			[
-				"packa",
-				"Preferences: Browse Packages"
-			],
-			[
 				"paka",
 				"Preferences: Browse Packages"
 			],
@@ -387,13 +399,19 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 467.0
+		"width": 485.0
 	},
 	"console":
 	{
 		"height": 139.0,
 		"history":
 		[
+			"which",
+			"which node",
+			"node",
+			"nvm",
+			"npm",
+			"node",
 			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -408,10 +426,12 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/manishjai/Projects/G2W-SPA"
+		"/Users/manishjai/Projects/G2W-SPA",
+		"/Users/manishjai/Projects/G2W-SPA/src"
 	],
 	"file_history":
 	[
+		"/Users/manishjai/Library/Application Support/Sublime Text 3/Packages/User/Refactor.sublime-settings",
 		"/Users/manishjai/Projects/G2W-SPA/index.html",
 		"/Users/manishjai/Perforce/manishjai_MANISHJ-MBP_2526/depot/Collaboration/common/main/pom.xml",
 		"/Users/manishjai/Perforce/manishjai_MANISHJ-MBP_2526/depot/Collaboration/common/main/src/main/java/com/citrix/collaboration/domain/account/G2WSettings.java",
@@ -538,8 +558,7 @@
 		"/Volumes/shakuni_mac/service/db/src/main/java/com/reardencommerce/expense/db/entity/BaseLineItemEntity.java",
 		"/Volumes/shakuni_mac/service/svc/src/main/java/com/reardencommerce/expense/service/bean/converter/CcsExpenseTypeConverter.java",
 		"/Volumes/shakuni_mac/web/web-app/js/app.js",
-		"/Volumes/shakuni_mac/service/svc/src/main/java/com/reardencommerce/expense/service/api/LineItemService.java",
-		"/Volumes/shakuni_mac/service/svc/src/main/java/com/reardencommerce/expense/service/api/rest/ReceiptEndpointImpl.java"
+		"/Volumes/shakuni_mac/service/svc/src/main/java/com/reardencommerce/expense/service/api/LineItemService.java"
 	],
 	"find":
 	{
@@ -833,7 +852,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -849,8 +868,8 @@
 						"selection":
 						[
 							[
-								168,
-								168
+								393,
+								393
 							]
 						],
 						"settings":
@@ -891,24 +910,24 @@
 						"translation.y": 248.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Notes",
+					"file": "Notes.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 107,
+						"buffer_size": 108,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								107,
-								107
+								76,
+								76
 							]
 						],
 						"settings":
@@ -919,7 +938,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -928,19 +947,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 279,
+						"buffer_size": 302,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								24
+								61,
+								54
 							]
 						],
 						"settings":
 						{
+							"nodePath": "/Users/manishjai/.nvm/versions/node/v8.2.1/bin/node",
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
@@ -975,7 +995,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -991,16 +1011,45 @@
 						"selection":
 						[
 							[
-								97,
-								97
+								504,
+								504
 							]
 						],
 						"settings":
 						{
 							"auto_name": "const path = require('path');",
+							"nodePath": "node",
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13,
+								13
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
