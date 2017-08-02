@@ -1,55 +1,75 @@
-var _  = require('lodash');
-
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const _  = require('lodash');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-/**
- * Common (in Production) Webpack configuration
- */
-var commonConfig = {
-  entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist') 
-  },
-  plugins: [
-    // create index.html under the versioned folder
-    new HtmlWebpackPlugin({
-        filename: 'index.html',
-        template: 'src/index.ejs',
-        inject: false
-    })
-  ]
 
-};
+const ENUM_ENV_DEV = 'dev';
+const ENUM_ENV_PROD = 'production';
+
+const ENUM_ENVS = [
+  ENUM_ENV_DEV,
+  ENUM_ENV_PROD
+];
+
+const config = {
+
+  /**
+   * Common (in Production) Webpack configuration
+   */
+  common: {
+    entry: './src/index.js',
+    output: {
+      filename: 'bundle.js',
+      path: path.resolve(__dirname, 'dist') 
+    },
+    plugins: [
+      // create index.html under the versioned folder
+      new HtmlWebpackPlugin({
+          filename: 'index.html',
+          template: 'src/index.ejs',
+          inject: false
+      })
+    ]
+
+  }
+}
 
 /**
  * Production only Webpack configuration
  */
-var prodConfig = {
+config[ENUM_ENV_PROD] = {
   devtool: "source-map",
-};
+}
 
 /**
  * Development only (non-production) Webpack configuration
  */
-var devConfig = {
+config[ENUM_ENV_DEV] = {
   devtool: "inline-source-map",
   devServer: {
     contentBase: './dist'
   }
 };
 
+var env = process.env.NODE_ENV;
+
+/**
+ * Defaulting env to dev
+ */
+if(!ENUM_ENVS.includes(env)){
+  console.log('Environment NOT set, Defaulting to dev');
+
+  env = ENUM_ENV_DEV;
+}
+
 /**
  * Generate final configuration to be used with webpack
  */
 function generateConfig(){
 
-  // Env based config selection logic goes here
-  var envConfig = devConfig;
+  console.log('Building *', env, '*');
 
-  return _.assign({}, commonConfig, envConfig);
+  return _.assign({}, config['common'], config[env]);
 }
 
 module.exports = generateConfig();
