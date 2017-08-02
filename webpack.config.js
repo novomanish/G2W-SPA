@@ -37,7 +37,7 @@ var prodConfig = {
 var devConfig = {
   devtool: "inline-source-map",
   devServer: {
-  	contentBase: './dist'
+    contentBase: './dist'
   }
 };
 
@@ -46,10 +46,10 @@ var devConfig = {
  */
 function generateConfig(){
 
-	// Env based config selection logic goes here
-	var envConfig = devConfig;
+  // Env based config selection logic goes here
+  var envConfig = devConfig;
 
-	return _.assign({}, commonConfig, envConfig);
+  return _.assign({}, commonConfig, envConfig);
 }
 
 module.exports = generateConfig();

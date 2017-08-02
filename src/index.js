@@ -7,6 +7,7 @@ function component() {
   element.innerHTML = _.join(['Hello', 'webpack', ', webpack-dev-server', ' from app@version 1'], ' ');
 
   return element;
+
 }
 
 document.body.appendChild(component());
