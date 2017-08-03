@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Manish Jaiswal<manish.jaiswal@logmein.com>",
   "license": "ISC",
   "devDependencies": {
     "html-webpack-plugin": "^2.30.1",

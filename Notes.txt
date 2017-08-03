@@ -9,3 +9,6 @@ Components
 Unit Tests
 
 Linting
+
+Authentication
+  https://bitbucket.ops.expertcity.com/projects/WC/repos/getgo-auth-client/browse
