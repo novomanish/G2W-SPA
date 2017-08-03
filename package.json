@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "STAGE_ENV=local webpack-dev-server --open --config=webpack.config/conf.js",
-    "build-live": "STAGE_ENV=live webpack --config=webpack.config/conf.js",
-    "build-ed": "STAGE_ENV=ed  webpack --config=webpack.config/conf.js",
+    "env": "env",
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV=production webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
   "devDependencies": {
     "chalk": "^2.0.1",
     "html-webpack-plugin": "^2.30.1",
+    "minimist": "^1.2.0",
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1",
     "webpack-merge": "^4.1.0"
