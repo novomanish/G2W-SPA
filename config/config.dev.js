@@ -1,10 +1,10 @@
-const _  = require('lodash');
-const config  = require('./config.base');
+const config  = require('./config');
+const ObjectUtil  = require('../src/helper/object-util');
 
 /**
  * Development only (non-production) Webpack configuration
  */
-module.exports = _.assign(null, config, {
+module.exports = ObjectUtil.mix(null, config, {
   devtool: "inline-source-map",
   devServer: {
     contentBase: './dist'
