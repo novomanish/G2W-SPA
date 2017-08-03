@@ -10,7 +10,12 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './dist') 
+    path: path.resolve(__dirname, '../dist') 
+  },
+  resolve: {
+    alias: {
+    }
+
   },
   plugins: [
     // create index.html under the versioned folder
