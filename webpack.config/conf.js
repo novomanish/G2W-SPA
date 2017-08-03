@@ -1,17 +1,10 @@
-// !IMPORTANT! This file runs in root scope
-
 var chalk = require('chalk');
 var fs = require('fs');
 
-var env = process.env.NODE_ENV;
-/**
- * Defaulting env to dev
- */
-if(!fs.existsSync(`webpack.config/${env}.conf.js`)){
-  
-  console.warn(chalk.red('WARN! Unsupported Environment', chalk.bold(env), ', Defaulting to ', chalk.bold('dev')));
-  env = 'dev';
-}
+var STAGE_ENV = process.env.STAGE_ENV;
+var appType = (STAGE_ENV === 'local') ? 'development' : 'production';
 
-console.log('Building', env, '\n');
-module.exports = require(`./${env}.conf.js`);
+console.log('Generating webpack configuration:', 'Type',chalk.bold(appType), 'Environment', chalk.bold(STAGE_ENV), '\n');
+var webpackConf = require(`./${appType}.conf.js`);
+
+module.exports = webpackConf;

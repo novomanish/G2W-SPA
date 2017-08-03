@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=dev webpack-dev-server --open --config=webpack.config/conf.js",
-    "build-prod": "NODE_ENV=production webpack --config=webpack.config/conf.js",
-    "build-ed": "NODE_ENV=ed  webpack --config=webpack.config/conf.js",
+    "dev": "STAGE_ENV=local webpack-dev-server --open --config=webpack.config/conf.js",
+    "build-live": "STAGE_ENV=live webpack --config=webpack.config/conf.js",
+    "build-ed": "STAGE_ENV=ed  webpack --config=webpack.config/conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
