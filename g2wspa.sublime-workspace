@@ -5,7 +5,7 @@
 		[
 			[
 				"web",
-				"webpack-dev-server"
+				"webpackConfig"
 			],
 			[
 				"join",
@@ -271,17 +271,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 424,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 2413,
-				"encoding": "UTF-8",
+				"buffer_size": 744,
 				"line_ending": "Unix"
 			}
 		},
@@ -289,44 +279,7 @@
 			"file": "Notes.txt",
 			"settings":
 			{
-				"buffer_size": 108,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/index.js",
-			"settings":
-			{
-				"buffer_size": 302,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "dist/index.html",
-			"settings":
-			{
-				"buffer_size": 125,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "webpack.config.js",
-			"settings":
-			{
-				"buffer_size": 765,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "const path = require('path');"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 18,
+				"buffer_size": 215,
 				"line_ending": "Unix"
 			}
 		}
@@ -338,10 +291,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "",
+		"height": 87.0,
+		"last_filter": "eslint",
 		"selected_items":
 		[
+			[
+				"eslint",
+				"ESLint"
+			],
 			[
 				"packa",
 				"Package Control: Remove Package"
@@ -399,13 +356,17 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 485.0
+		"width": 458.0
 	},
 	"console":
 	{
 		"height": 139.0,
 		"history":
 		[
+			"$PATH",
+			"echo",
+			"launchctl",
+			"ls",
 			"which",
 			"which node",
 			"node",
@@ -427,10 +388,52 @@
 	"expanded_folders":
 	[
 		"/Users/manishjai/Projects/G2W-SPA",
-		"/Users/manishjai/Projects/G2W-SPA/src"
+		"/Users/manishjai/Projects/G2W-SPA/dist",
+		"/Users/manishjai/Projects/G2W-SPA/src",
+		"/Users/manishjai/Projects/G2W-SPA/webpack"
 	],
 	"file_history":
 	[
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config/production.conf.js",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config/development.conf.js",
+		"/Users/manishjai/Projects/G2W-SPA/dist/index.html",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config/base.js",
+		"/Users/manishjai/Projects/G2W-SPA/package-lock.json",
+		"/Users/manishjai/Projects/G2W-SPA/package.json",
+		"/Users/manishjai/Projects/G2W-SPA/README.md",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config.js",
+		"/Users/manishjai/Projects/G2W-SPA/Notes.txt",
+		"/Users/manishjai/Projects/G2W-SPA/webpack/config.production.js",
+		"/Users/manishjai/Projects/G2W-SPA/webpack/config.development.js",
+		"/Users/manishjai/Projects/G2W-SPA/Gruntfile.js",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config/../webpack.config.js",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config/conf-selector.js",
+		"/Users/manishjai/Projects/G2W-SPA/src/helper/../../webpack.config/env.js",
+		"/Users/manishjai/Projects/G2W-SPA/build/build.js",
+		"/Users/manishjai/Projects/G2W-SPA/build/server.js",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config.production.js",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config.base.js",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config.dev.js",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config/../webpack.config.base.js",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config/../webpack.config.dev.js",
+		"/Users/manishjai/Projects/G2W-SPA/webpack.config/../webpack.config.production.js",
+		"/Users/manishjai/Projects/G2W-SPA/src/helper/object-util.js",
+		"/Users/manishjai/Projects/G2W-SPA/config/config.dev.js",
+		"/Users/manishjai/Projects/G2W-SPA/.npmrc",
+		"/Users/manishjai/Projects/G2W-SPA/config/webpack.config.js",
+		"/Users/manishjai/Projects/G2W-SPA/config/config.js",
+		"/Users/manishjai/Projects/G2W-SPA/config/config.production.js",
+		"/Users/manishjai/Projects/G2W-SPA/src/helper/env.js",
+		"/Users/manishjai/Projects/G2W-SPA/src/webpack/config.production.js",
+		"/Users/manishjai/Projects/G2W-SPA/src/webpack/config.dev.js",
+		"/Users/manishjai/Projects/G2W-SPA/src/webpack/dist/bundle.js",
+		"/Users/manishjai/Projects/G2W-SPA/src/webpack/config.js",
+		"/Users/manishjai/Projects/G2W-SPA/g2wspa.sublime-project",
+		"/Users/manishjai/Projects/G2W-SPA/src/index.js",
+		"/Users/manishjai/Projects/G2W-SPA/src/webpack1/config.js",
+		"/Users/manishjai/Projects/G2W-SPA/.gitignore",
+		"/Users/manishjai/Projects/G2W-SPA/src/index.ejs",
+		"/Users/manishjai/Projects/G2W-SPA/src/static/../index.ejs",
 		"/Users/manishjai/Library/Application Support/Sublime Text 3/Packages/User/Refactor.sublime-settings",
 		"/Users/manishjai/Projects/G2W-SPA/index.html",
 		"/Users/manishjai/Perforce/manishjai_MANISHJ-MBP_2526/depot/Collaboration/common/main/pom.xml",
@@ -518,51 +521,11 @@
 		"/Volumes/shakuni_mac/web/target/static/expense/0/js/expenseForm/expenseForm-debug.js",
 		"/Volumes/shakuni_mac/web/web-app/js/src/costAllocationAutoComplete/costAllocationAutoComplete.js",
 		"/Volumes/shakuni_mac/web/grails-app/views/lineItem/handlebars/_hbLocationAutocompleteTemplate.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/views/report/_editor.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/views/lineItem/handlebars/_hbFormFieldsSubmittable.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/views/costAllocation/_costAllocationFields.gsp",
-		"/Volumes/shakuni_mac/web/target/static/expense/0/js/costAllocationAutoCompleteManager/costAllocationAutoCompleteManager-debug.js",
-		"/Volumes/shakuni_mac/web/web-app/js/src/locationAutoComplete/locationAutoComplete.js",
-		"/Volumes/shakuni_mac/web/grails-app/views/report/editor.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/views/cmpt/_autoComplete.gsp",
-		"/Volumes/shakuni_mac/notifcontent/grails-app/services/BaseExpenseService.groovy",
-		"/Volumes/shakuni_mac/notifcontent/plugins/rc-grails-core-1.4.0/src/groovy/BaseService.groovy",
-		"/Volumes/shakuni_mac/web/grails-app/views/cmpt/_messageFormError.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/services/LineItemService.groovy",
-		"/Volumes/shakuni_mac/web/grails-app/controllers/LineItemController.groovy",
-		"/Volumes/shakuni_mac/web/plugins/rc-grails-core-1.4.0/src/groovy/BaseController.groovy",
-		"/Volumes/shakuni_mac/web/plugins/rc-grails-core-1.4.0/src/groovy/BaseService.groovy",
-		"/Volumes/shakuni_mac/web/grails-app/services/BaseExpenseService.groovy",
-		"/Volumes/shakuni_mac/notifcontent/grails-app/i18n/messages.properties",
-		"/Volumes/shakuni_mac/web/grails-app/views/lineItem/handlebars/_hbDrawer.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/views/lineItem/modalItemizer.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/views/report/_editorPageParentItem.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/views/lineItem/drawer.gsp",
-		"/Volumes/shakuni_mac/web/web-app/js/src/expenseCalendar/expenseCalendar.js",
-		"/Volumes/shakuni_mac/web/grails-app/views/lineItem/_itemizeFields.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/views/lineItem/_childItem.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/services/LineItemModelService.groovy",
-		"/Volumes/shakuni_mac/web/grails-app/views/lineItem/_itemizeTable.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/views/cmpt/_calendar.gsp",
-		"/Volumes/shakuni_mac/service/svc/src/main/java/com/reardencommerce/expense/service/adapter/impl/LineItemServiceAdapterImpl.java",
-		"/Volumes/shakuni_mac/web/grails-app/views/receipt/_receiptTransactions.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/views/receipt/modalReceiptViewer.gsp",
-		"/Volumes/shakuni_mac/web/grails-app/controllers/ReceiptController.groovy",
-		"/Volumes/shakuni_mac/web/grails-app/services/ReceiptModelService.groovy",
-		"/Volumes/shakuni_mac/web/grails-app/services/ReceiptService.groovy",
-		"/Volumes/shakuni_mac/service/svc/src/main/java/com/reardencommerce/expense/service/impl/db/LineItemServiceDbImpl.java",
-		"/Volumes/shakuni_mac/service/db/src/main/java/com/reardencommerce/expense/db/impl/LineItemDaoImpl.java",
-		"/Volumes/shakuni_mac/expense-base/src/main/java/com/reardencommerce/expense/service/bean/SimpleLineItem.java",
-		"/Volumes/shakuni_mac/service/db/src/main/java/com/reardencommerce/expense/db/entity/LineItemEntity.java",
-		"/Volumes/shakuni_mac/expense-base/src/main/java/com/reardencommerce/expense/service/bean/BaseLineItem.java",
-		"/Volumes/shakuni_mac/service/db/src/main/java/com/reardencommerce/expense/db/entity/BaseLineItemEntity.java",
-		"/Volumes/shakuni_mac/service/svc/src/main/java/com/reardencommerce/expense/service/bean/converter/CcsExpenseTypeConverter.java",
-		"/Volumes/shakuni_mac/web/web-app/js/app.js",
-		"/Volumes/shakuni_mac/service/svc/src/main/java/com/reardencommerce/expense/service/api/LineItemService.java"
+		"/Volumes/shakuni_mac/web/grails-app/views/report/_editor.gsp"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -704,6 +667,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" \n",
 			"app.vue",
 			"setBrightcoveVideoId",
 			"asset",
@@ -830,8 +794,7 @@
 			"perdiemRates ",
 			"perdiemRates",
 			"displayperdiemrate",
-			"fetchperdiemrates",
-			"getExpenseType"
+			"fetchperdiemrates"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -852,7 +815,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -861,15 +824,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 424,
+						"buffer_size": 744,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								393,
-								393
+								325,
+								325
 							]
 						],
 						"settings":
@@ -882,180 +845,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2413,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2413,
-								2413
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 248.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "Notes.txt",
-					"semi_transient": false,
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 108,
+						"buffer_size": 215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								76,
-								76
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								61,
-								54
-							]
-						],
-						"settings":
-						{
-							"nodePath": "/Users/manishjai/.nvm/versions/node/v8.2.1/bin/node",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "dist/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 125,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								107,
-								107
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "webpack.config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 765,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								504,
-								504
-							]
-						],
-						"settings":
-						{
-							"auto_name": "const path = require('path');",
-							"nodePath": "node",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13,
-								13
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1092,6 +910,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0

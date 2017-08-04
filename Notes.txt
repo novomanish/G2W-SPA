@@ -12,3 +12,5 @@ Linting
 
 Authentication
   https://bitbucket.ops.expertcity.com/projects/WC/repos/getgo-auth-client/browse
+
+Routing

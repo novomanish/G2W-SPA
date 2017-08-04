@@ -1,13 +1,12 @@
-import _ from 'lodash';
+const _ = require('lodash');
 
 function component() {
-  var element = document.createElement('div');
+  const element = document.createElement('div');
 
   // Lodash, now imported by this script
   element.innerHTML = _.join(['Hello', 'webpack', ', webpack-dev-server', ' from app@version 3'], ' ');
 
   return element;
-
 }
 
 document.body.appendChild(component());
