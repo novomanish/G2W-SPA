@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "prebuild": "rm -rf dist/*",
     "build": "webpack",
     "build:prod": "NODE_ENV=production npm run build",
     "lint": "eslint --ext .js,.vue src",
@@ -32,6 +33,7 @@
     "handlebars-loader": "^1.5.0",
     "html-webpack-plugin": "^2.30.1",
     "minimist": "^1.2.0",
+    "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
     "vue-loader": "^13.0.2",
     "vue-style-loader": "^3.0.1",

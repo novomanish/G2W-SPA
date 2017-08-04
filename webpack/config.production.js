@@ -7,5 +7,5 @@ const CommonConfig  = require('./config.common.js');
  */
 
 module.exports = Merge(CommonConfig, {
-
+  devtool: "source-map"
 })

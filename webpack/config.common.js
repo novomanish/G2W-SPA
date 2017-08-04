@@ -7,7 +7,7 @@ const path = require('path');
  * Basic (in Production) Webpack configuration
  */
 module.exports = {
-  entry: './src/vue-app-bridge.js',
+  entry: './src/vue-entry.js',
   output: {
     filename: '[hash].bundle.js',
     path: path.resolve(__dirname, '../dist')
@@ -23,6 +23,16 @@ module.exports = {
     rules: [{
         test: /\.hbs$/,
         loader: 'handlebars-loader'
+      },
+
+      // https://github.com/webpack/url-loader
+      {
+        test: /\.(ico)/,
+        loader: 'url-loader',
+        query: {
+          limit: 10000,
+          name: '[name].[ext]'
+        }
       },
 
       // https://github.com/vuejs/vue-loader
@@ -49,6 +59,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.template.hbs',
+      favicon: './src/favicon.ico',
+      minify: {
+        collapseWhitespace: true,
+        conservativeCollapse: true,
+        preserveLineBreaks: true
+      },
       title: 'G2W',
     })
   ]
