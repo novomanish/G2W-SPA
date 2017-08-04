@@ -10,6 +10,7 @@ module.exports = {
             'js': 'never',
             'vue': 'never'
         }],
+        'no-new': 'off'
     },
 
     settings: {
