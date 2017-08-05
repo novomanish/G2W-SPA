@@ -3,6 +3,10 @@ const _ = require('lodash');
 const path = require('path');
 
 
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+}
+
 /**
  * Basic (in Production) Webpack configuration
  */
@@ -15,7 +19,8 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue'],
     alias: {
-      'src': path.resolve(__dirname, '../src')
+      'src': path.resolve(__dirname, '../src'),
+      'vue$': 'vue/dist/vue.esm.js'
     }
 
   },
@@ -51,7 +56,14 @@ module.exports = {
             ]
           },
         }
-      }
+      }, 
+
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: [resolve('src'), resolve('test')]
+      },
+
     ]
   },
   plugins: [
