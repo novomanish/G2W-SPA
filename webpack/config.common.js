@@ -2,7 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const _ = require('lodash');
 const path = require('path');
 
-
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
@@ -20,7 +19,8 @@ module.exports = {
     extensions: ['.js', '.vue'],
     alias: {
       'src': path.resolve(__dirname, '../src'),
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': resolve('src')
     }
 
   },
